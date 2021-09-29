@@ -1,0 +1,61 @@
+@import url(https://fonts.googleapis.com/css?family=Rubik+One&subset=latin,cyrillic);
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Rubik One', sans-serif;
+}
+
+body {
+	background-color: #1D293A;
+}
+
+main button {
+	transition: .05s;
+	transition-property: transform, background-color;
+	background-color: rgba(255, 255, 255, .1);
+	border: none;
+	outline: none;
+	height: 60px;
+	box-sizing: border-box;
+	cursor: pointer;
+	color: rgba(255, 255, 255, .8);
+	margin: 8px 5px;
+	display: inline-table;
+	/*margin-right: -4px;*/
+	/*border: 1px solid #fff;*/
+	font-size: 20px;
+}
+main button:hover {
+	background-color: rgba(255, 255, 255, .2);
+}
+.cal_size_one {
+	width: 60px;
+}
+.cal_size_two {
+	width: 134px;
+}
+main button:active {
+	transform: scale(.95);
+	background-color: rgba(255, 255, 255, .15);
+}
+.cal_window {
+	background-color: rgba(255, 255, 255, 0);
+	outline: none;
+	color: #fff;
+	position: relative;
+	padding: 15px 0;
+	width: 96%;
+	box-sizing: border-box;
+	border: none;
+	border-bottom: 1px solid rgba(255, 255, 255, .3);
+	text-align: right;
+	font-size: 20px;
+}
+
+main {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
